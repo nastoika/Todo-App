@@ -7,7 +7,7 @@ import InputField from "./components/InputField";
 
 function App() {
     const [text, setText] = useState('');
-    const {status,error} = useSelector(state => state.todos);
+    const {status, error} = useSelector(state => state.todos);
     const dispatch = useDispatch();
     const addTask = () => {
         dispatch(addTodo({text}));
